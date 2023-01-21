@@ -5,5 +5,7 @@ import (
 )
 
 func main() {
+	var ()
+	fmt.Scanf()
 	fmt.Println()
 }

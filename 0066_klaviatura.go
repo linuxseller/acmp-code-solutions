@@ -5,8 +5,20 @@ import (
 )
 
 func main() {
-	//var letters
+	var letters string = "qwertyuiopasdfghjklzxcvbnmq"
 	var input string
+	var letter uint8
+
 	fmt.Scan(&input)
-	fmt.Println(input[0], "- that's what he said.")
+	letter = input[0]
+
+	for i := 0; i < 27; i++ {
+		if letter == letters[i] {
+			letter = letters[i+1]
+			break
+		}
+	}
+
+	fmt.Println(string(letter))
+
 }
