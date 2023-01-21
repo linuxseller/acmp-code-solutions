@@ -1,0 +1,7 @@
+a,b=map(int,input().split())
+c,d=map(int,input().split())
+e,f=map(int,input().split())
+j,h=map(int,input().split())
+if a+c+e+j > b+d+f+h: print(1)
+elif a+c+e+j < b+d+f+h: print(2)
+else: print("DRAW")
